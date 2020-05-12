@@ -1,2 +1,2 @@
 # imersaocss
-Site utilizando htm e css
+Site utilizando html e css
