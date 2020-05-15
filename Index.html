@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Gloria+Hallelujah&family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/efd5c5925e.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script>
+
+  <title>David Inácio</title>
+</head>
+
+<body>
+  <header id="home">
+    <nav class="menu">
+      <ul class="container">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="apresentacao">
+      <div class="apresentacao-descricao">
+        <h1 class="site-title">David Inácio</h1>
+        <h2 class="site-subtitle">Desenvolvedor .Net</h2>
+        <h2 class="site-subtitle">Back-End & Front-End</h2>
+      </div>
+      <css-doodle>
+        :doodle { 
+          @grid: 1x10 / 61.8vmin; 
+        }
+      
+        @place-cell: center; 
+        @size: calc(@index() * 10%);
+        
+        border-radius: 50%;
+        border-style: dashed;
+        border-width: calc(@index() * 1vmin); 
+        border-color: hsla(
+          calc(20 * @index()), 70%, 68%, 
+          calc(3 / @index() * .8)
+        );
+        
+        --d: @rand(20s, 40s); 
+        --rf: @rand(360deg);
+        --rt: calc(var(--rf) + @pick(1turn, -1turn));
+      
+        animation: spin var(--d) linear infinite;
+        @keyframes spin {
+          from { transform: rotate(var(--rf)) }
+          to   { transform: rotate(var(--rt)) }
+        }
+      </css-doodle>
+
+    </div>
+  </header>
+  <div class="secao-sobre">
+    <section class="sobre container" id="sobre">
+      <h2>Sobre</h2>
+      <figure class="avatar">
+        <img src="img/IMG_1446.jpg" alt="David Inácio">
+      </figure>
+      <p>
+        Sou desenvolvedor com mais de 8 anos de experiência em desenvolvimento web. Iniciei minha carreira usando a linguagem VB.Net, cheguei a trabalhar com Asp Clássico e VB 6. Em pouco tempo passei a atuar em projetos com .Net Framework 2.0 e 3.5 usando Asp.Net, ADO, My Generation, mantive sistemas legados e projetos com essas tecnologias.
+      </p>
+      <p>
+        Passei a trabalhar com .Net Framework 4 e Asp.Net MVC, desde então atuei tanto no back-end como no front-end, passei a trabalhar também com JavaScript, JQuery, fazer requisições Ajax, Web Services e Api. Atualmente estou desenvolvendo alguns projetos com a plataforma .Net Core.
+      </p>
+      <p>
+        Tenho interesse em solidificar meus conhecimentos, conhecer novas tecnologias, ajudar outros desenvolvedores e contribuir com meu trabalho e dedicação pela área.
+      </p>
+      <p>
+        Este site foi construido durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura.</a>
+      </p>
+    </section>
+
+  </div>
+
+  <div class="secao-portfolio">
+    <section class="portfolio container" id="portfolio">
+      <h2>Portfólio</h2>
+  
+      <div class="grid">
+  
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/desenvolvimento.jpg" alt="Desenvolvedor de Sistemas">
+              <figcaption>Desenvolvimento de Sistemas</figcaption>
+            </figure>
+            <div class="card-back">
+              <p>Trabalho no desenvolvimento de Sistemas desde 2010.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/loja-virtual.jpeg" alt="eCommerce">
+              <figcaption>eCommerce</figcaption>
+            </figure>
+            <div class="card-back">
+              <p>Trabalhei no desenvolvimento de um ecommerce, o mesmo esta disponivel no endereço <a href="http://forges.com.br/" target="_blank">http://forges.com.br/</a></p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/dev-mobile.jpg" alt=">Mobile">
+              <figcaption>Desenvolvimento Mobile</figcaption>
+            </figure>
+            <div class="card-back">
+              <p>
+                Trabalhei em algumas melhorias no App <a href="https://play.google.com/store/apps/details?id=br.com.seplagosasco.bic" target="_blank">BIC Osasco</a> e participei do desenvolvimento dos Apps Visão 360 para plataforma <a href="https://play.google.com/store/apps/details?id=br.com.seplagosasco.visao360" target="_blank">Android</a> e <a href="https://apps.apple.com/us/app/vis%C3%A3o-360/id1498236692" target="_blank">iOS</a>. 
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/pratos-tradicionais.jpg" alt=">Gastronomia">
+              <figcaption>Gastronomia</figcaption>
+            </figure>
+            <div class="card-back">
+                <p>
+                  Gosto de cozinhar, sempre que posso faço as refeições em casa.
+                </p>              
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/apicultura.jpg" alt=">Apicultura">
+              <figcaption>Apicultura</figcaption>
+            </figure>
+            <div class="card-back">
+              <p>Meu pai tem um pequeno apiário, sempre me dediquei à  aprender e ajuda-lo. </p>
+            </div>
+          </div>
+        </div> 
+  
+      </div>
+    </section>
+  </div>
+
+
+
+  <section class="contato container" id="contato">
+    <h2>Contato</h2>
+
+    <div class="grid icons">
+      <a target="_blank" href="https://github.com/david-inacio">
+        <i class="fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://twitter.com/DavidInacioRosa">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a target="_blank" href="https://linkedin.com/in/davidinaciorosa">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a target="_blank" href="https://instagram.com/david_inacio_rosa">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+    </div>
+  </section>
+</body>
+</html>
